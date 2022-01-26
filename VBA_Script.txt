@@ -1,0 +1,9 @@
+Dim i As Integer
+i = 1
+While Cells(i, 1) <> ""
+If Cells(i, 1) = "-" Then
+Rows(i).Delete
+Else
+i = i + 1
+End If
+Wend
